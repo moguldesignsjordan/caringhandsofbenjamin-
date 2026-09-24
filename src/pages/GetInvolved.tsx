@@ -89,7 +89,6 @@ export default function GetInvolved() {
             title="Let's build this together"
             intro="Questions about our programs, board seats, partnerships, or giving? Send us a note and our team will follow up."
           />
-          <img src="/images/team.jpg" alt="CHOB team members" className="mt-10 hidden aspect-[4/3] w-full rounded-3xl object-cover md:block" />
         </div>
 
         <form onSubmit={handleSubmit} className="rounded-3xl bg-white p-7 shadow-sm ring-1 ring-forest-900/5 sm:p-10">
