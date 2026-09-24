@@ -8,40 +8,35 @@ export default function Home() {
   return (
     <>
       <section className="relative isolate overflow-hidden bg-forest-900">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_85%_20%,rgba(155,203,60,0.18),transparent_55%)]" />
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-16 pb-24 sm:px-6 sm:pt-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:px-8 lg:pt-24 lg:pb-32">
-          <div>
-            <p className="text-sm font-semibold tracking-[0.2em] text-leaf uppercase">{org.city}</p>
-            <h1 className="mt-4 text-5xl leading-[1.05] font-semibold text-white sm:text-6xl xl:text-7xl">
-              Rebuilding lives.
-              <br />
-              <span className="text-leaf">Restoring hope.</span>
-              <br />
-              Redefining opportunity.
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-forest-100/90 sm:text-xl">{org.tagline}</p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <Link
-                to="/get-involved#donate"
-                className="rounded-full bg-leaf px-7 py-3.5 text-center font-semibold text-forest-900 transition hover:bg-white"
-              >
-                Support our work
-              </Link>
-              <Link
-                to="/programs"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10"
-              >
-                Explore our programs <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
-          </div>
-          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-            <div className="absolute -inset-3 -z-10 rotate-2 rounded-[2rem] bg-leaf/25" aria-hidden />
-            <img
-              src="/images/banner-hero.jpg"
-              alt="A young participant and a CHOB mentor smiling beside the Caring Hands of Benjamin banner"
-              className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[center_30%] shadow-2xl"
-            />
+        <img
+          src="/images/banner-hero.jpg"
+          alt="A young participant and a CHOB mentor smiling beside the Caring Hands of Benjamin banner"
+          className="absolute inset-0 -z-10 h-full w-full object-cover object-[center_30%] opacity-35"
+        />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-forest-900 from-30% via-forest-900/85 to-forest-900/10" />
+        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
+          <p className="text-sm font-semibold tracking-[0.2em] text-leaf uppercase">{org.city}</p>
+          <h1 className="mt-4 max-w-3xl text-5xl leading-[1.05] font-semibold text-white sm:text-6xl lg:text-7xl">
+            Rebuilding lives.
+            <br />
+            <span className="text-leaf">Restoring hope.</span>
+            <br />
+            Redefining opportunity.
+          </h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-forest-100/90 sm:text-xl">{org.tagline}</p>
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <Link
+              to="/get-involved#donate"
+              className="rounded-full bg-leaf px-7 py-3.5 text-center font-semibold text-forest-900 transition hover:bg-white"
+            >
+              Support our work
+            </Link>
+            <Link
+              to="/programs"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10"
+            >
+              Explore our programs <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>
