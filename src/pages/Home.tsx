@@ -116,8 +116,14 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <SectionHeading eyebrow="In the community" title="The work, on the ground in Detroit" />
         <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-          {gallery.map((g) => (
-            <img key={g.src} src={g.src} alt={g.alt} loading="lazy" className="aspect-square w-full rounded-2xl object-cover" />
+          {gallery.map((g, i) => (
+            <img
+              key={g.src}
+              src={g.src}
+              alt={g.alt}
+              loading="lazy"
+              className={`w-full rounded-2xl object-cover ${i === 0 ? 'col-span-2 aspect-[2/1]' : 'aspect-square'}`}
+            />
           ))}
         </div>
       </section>

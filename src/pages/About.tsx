@@ -17,7 +17,7 @@ export default function About() {
             <p key={p.slice(0, 20)} className="mt-5 text-lg leading-relaxed text-ink/80">{p}</p>
           ))}
         </div>
-        <img src="/images/team.jpg" alt="CHOB participants and staff" className="aspect-[3/4] w-full rounded-3xl object-cover md:col-span-2" />
+        <img src="/images/banner-hero.jpg" alt="A young participant and a CHOB mentor beside the Caring Hands of Benjamin banner" className="aspect-[3/4] w-full rounded-3xl object-cover md:col-span-2" />
       </section>
 
       <section className="bg-forest-800 py-20 text-white lg:py-24">

@@ -106,10 +106,9 @@ export const openSeats = [
 ]
 
 export const gallery = [
-  { src: '/images/team.jpg', alt: 'Four CHOB participants and staff smiling together in an office' },
+  { src: '/images/housing-rehab.jpg', alt: 'A Detroit home receiving a new roof' },
   { src: '/images/renovation-attic.jpg', alt: 'A crew member surveying an attic renovation in progress' },
   { src: '/images/program-orientation.jpg', alt: 'Participants completing paperwork at a program orientation' },
   { src: '/images/workforce-intake.jpg', alt: 'A young man filling out workforce program forms' },
-  { src: '/images/housing-rehab.jpg', alt: 'A Detroit home receiving a new roof' },
   { src: '/images/homeownership-session.jpg', alt: 'A homeownership education session' },
 ]
